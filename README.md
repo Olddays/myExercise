@@ -1,1 +1,1 @@
-# Nothing special, just a personal exercise.
+# Nothing special, just a personal programming exercise.
