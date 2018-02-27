@@ -1,0 +1,5 @@
+out/
+
+# Android Studio files
+.idea/
+*.iml
