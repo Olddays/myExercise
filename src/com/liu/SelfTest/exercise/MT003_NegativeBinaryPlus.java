@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class MT003_NegativeBinaryPlus {
 
-    // 输入一个从左到右排序的-2进制数字,输出此数字+1后的值的-2进制从左到右排序形式的表示.
+    // 输入一个从左到右排序的-2进制数字,输出此数字+1后的值的-2进制从左到右排序形式的表示.(输入内容是非负整数的-2进制表示)
 
     public static int[] getNegativeBinaryPlusAnswer1(int[] input) {
         if (input.length == 0) {
