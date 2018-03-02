@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import static com.liu.LeetApp.exercise.LA002_ThreeSum.*;
 
 /**
- * Created by baidu on 2016/11/27.
+ * Created by liu on 2016/11/27.
  */
 public class LA002_ThreeSumTest {
 

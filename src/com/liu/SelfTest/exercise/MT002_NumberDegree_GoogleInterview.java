@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by baidu on 09/01/2018.
+ * Created by liu on 09/01/2018.
  */
 public class MT002_NumberDegree_GoogleInterview {
 

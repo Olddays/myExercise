@@ -3,7 +3,7 @@ package com.liu.IntroductionToAlgorithmicCompetition.test;
 import static com.liu.IntroductionToAlgorithmicCompetition.exercise.ITAC205_Stat.getStatMy1;
 
 /**
- * Created by baidu on 2016/11/27.
+ * Created by liu on 2016/11/27.
  */
 public class ITAC205_StatTest {
 

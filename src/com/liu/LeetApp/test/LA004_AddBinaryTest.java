@@ -3,7 +3,7 @@ package com.liu.LeetApp.test;
 import static com.liu.LeetApp.exercise.LA004_AddBinary.*;
 
 /**
- * Created by baidu on 2016/11/30.
+ * Created by liu on 2016/11/30.
  */
 public class LA004_AddBinaryTest {
 

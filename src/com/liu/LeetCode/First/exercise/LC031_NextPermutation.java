@@ -3,7 +3,7 @@ package com.liu.LeetCode.First.exercise;
 import java.util.Arrays;
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC031_NextPermutation {
     /**

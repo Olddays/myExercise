@@ -1,7 +1,7 @@
 package com.liu.IntroductionToAlgorithmicCompetition.exercise;
 
 /**
- * Created by baidu on 2016/12/30.
+ * Created by liu on 2016/12/30.
  */
 public class ITAC109_Triangle {
 

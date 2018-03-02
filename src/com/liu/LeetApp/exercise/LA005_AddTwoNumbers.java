@@ -1,7 +1,7 @@
 package com.liu.LeetApp.exercise;
 
 /**
- * Created by baidu on 2016/12/1.
+ * Created by liu on 2016/12/1.
  */
 public class LA005_AddTwoNumbers {
 

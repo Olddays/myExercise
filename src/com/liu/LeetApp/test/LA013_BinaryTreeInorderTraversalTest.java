@@ -1,7 +1,7 @@
 package com.liu.LeetApp.test;
 
 /**
- * Created by baidu on 2016/12/19.
+ * Created by liu on 2016/12/19.
  */
 public class LA013_BinaryTreeInorderTraversalTest {
     public static void main(String[] args) {

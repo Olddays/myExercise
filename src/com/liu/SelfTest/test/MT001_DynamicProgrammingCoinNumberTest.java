@@ -3,7 +3,7 @@ package com.liu.SelfTest.test;
 import static com.liu.SelfTest.exercise.MT001_DynamicProgrammingCoinNumber.getDynamicProgrammingCoinNumberMy1;
 
 /**
- * Created by baidu on 2016/11/27.
+ * Created by liu on 2016/11/27.
  */
 public class MT001_DynamicProgrammingCoinNumberTest {
 

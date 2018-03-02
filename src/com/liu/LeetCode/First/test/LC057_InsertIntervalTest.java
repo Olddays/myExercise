@@ -8,7 +8,7 @@ import java.util.List;
 import static com.liu.LeetCode.First.exercise.LC057_InsertInterval.*;
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC057_InsertIntervalTest {
 

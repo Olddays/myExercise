@@ -4,7 +4,7 @@ package com.liu.LeetCode.First.test;
 import static com.liu.LeetCode.First.exercise.LC001_TwoSum.getTwoSumMy1;
 
 /**
- * Created by baidu on 2017/9/6.
+ * Created by liu on 2017/9/6.
  */
 public class LC001_TwoSumTest {
 

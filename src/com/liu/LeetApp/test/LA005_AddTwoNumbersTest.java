@@ -3,7 +3,7 @@ package com.liu.LeetApp.test;
 import static com.liu.LeetApp.exercise.LA005_AddTwoNumbers.*;
 
 /**
- * Created by baidu on 2016/12/1.
+ * Created by liu on 2016/12/1.
  */
 public class LA005_AddTwoNumbersTest {
     public static void main(String[] args) {

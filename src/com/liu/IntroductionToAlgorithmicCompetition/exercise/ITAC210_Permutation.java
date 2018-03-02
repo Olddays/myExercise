@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by baidu on 2016/12/30.
+ * Created by liu on 2016/12/30.
  */
 public class ITAC210_Permutation {
 

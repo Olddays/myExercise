@@ -6,7 +6,7 @@ import java.util.List;
 import static com.liu.LeetCode.First.exercise.LC040_CombinationSumII.*;
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC040_CombinationSumIITest {
 

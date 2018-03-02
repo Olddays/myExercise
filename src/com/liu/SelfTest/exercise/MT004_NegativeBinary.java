@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by baidu on 11/02/2018.
+ * Created by liu on 11/02/2018.
  */
 public class MT004_NegativeBinary {
 

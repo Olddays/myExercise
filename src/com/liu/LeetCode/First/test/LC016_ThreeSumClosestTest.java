@@ -4,7 +4,7 @@ import static com.liu.LeetCode.First.exercise.LC016_ThreeSumClosest.*;
 
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC016_ThreeSumClosestTest {
 

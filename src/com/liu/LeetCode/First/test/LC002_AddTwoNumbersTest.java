@@ -6,7 +6,7 @@ import static com.liu.LeetCode.First.exercise.LC002_AddTwoNumbers.addTwoNumbersM
 import static com.liu.LeetCode.First.exercise.LC002_AddTwoNumbers.addTwoNumbersMy2;
 
 /**
- * Created by baidu on 2017/9/6.
+ * Created by liu on 2017/9/6.
  */
 public class LC002_AddTwoNumbersTest {
 

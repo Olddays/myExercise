@@ -1,7 +1,7 @@
 package com.liu.LeetApp.exercise;
 
 /**
- * Created by baidu on 2016/12/6.
+ * Created by liu on 2016/12/6.
  */
 public class LA008_BestTimeToBuyAndSellStock {
 

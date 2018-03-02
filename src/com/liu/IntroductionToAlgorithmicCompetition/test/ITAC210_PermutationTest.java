@@ -5,7 +5,7 @@ import java.util.List;
 import static com.liu.IntroductionToAlgorithmicCompetition.exercise.ITAC210_Permutation.getPermutationMy1;
 
 /**
- * Created by baidu on 2016/11/27.
+ * Created by liu on 2016/11/27.
  */
 public class ITAC210_PermutationTest {
 

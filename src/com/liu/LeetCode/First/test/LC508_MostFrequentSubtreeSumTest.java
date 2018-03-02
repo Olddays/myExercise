@@ -4,7 +4,7 @@ import static com.liu.LeetCode.First.exercise.LC508_MostFrequentSubtreeSum.getMo
 import static com.liu.LeetCode.First.exercise.LC508_MostFrequentSubtreeSum.TreeNode;
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC508_MostFrequentSubtreeSumTest {
 

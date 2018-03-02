@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import static com.liu.LeetApp.exercise.LA006_Anagrams.*;
 
 /**
- * Created by baidu on 2016/12/5.
+ * Created by liu on 2016/12/5.
  */
 public class LA006_AnagramsTest {
 

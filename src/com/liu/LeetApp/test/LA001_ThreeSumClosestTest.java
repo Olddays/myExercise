@@ -3,7 +3,7 @@ package com.liu.LeetApp.test;
 import static com.liu.LeetApp.exercise.LA001_ThreeSumClosest.*;
 
 /**
- * Created by baidu on 2016/11/27.
+ * Created by liu on 2016/11/27.
  */
 public class LA001_ThreeSumClosestTest {
 

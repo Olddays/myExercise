@@ -3,7 +3,7 @@ package com.liu.IntroductionToAlgorithmicCompetition.test;
 import static com.liu.IntroductionToAlgorithmicCompetition.exercise.ITAC208_Subsequence.getSubsequenceMy1;
 
 /**
- * Created by baidu on 2016/11/27.
+ * Created by liu on 2016/11/27.
  */
 public class ITAC208_SubsequenceTest {
 

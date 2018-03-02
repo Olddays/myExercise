@@ -1,7 +1,7 @@
 package com.liu.LeetCode.First.exercise;
 
 /**
- * Created by baidu on 2017/9/6.
+ * Created by liu on 2017/9/6.
  */
 public class LC002_AddTwoNumbers {
 

@@ -1,7 +1,7 @@
 package com.liu.LeetApp.exercise;
 
 /**
- * Created by baidu on 2016/12/5.
+ * Created by liu on 2016/12/5.
  */
 public class LA007_BalancedBinaryTree {
 

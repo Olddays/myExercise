@@ -1,7 +1,7 @@
 package com.liu.LeetCode.First.exercise;
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC026_RemoveDuplicatesFromSortedArray {
     /**

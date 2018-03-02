@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * Created by baidu on 2016/12/5.
+ * Created by liu on 2016/12/5.
  */
 public class LA006_Anagrams {
 

@@ -3,7 +3,7 @@ package com.liu.LeetCode.First.test;
 import static com.liu.LeetCode.First.exercise.LC005_LongestPalindromicSubstring.*;
 
 /**
- * Created by baidu on 2017/9/8.
+ * Created by liu on 2017/9/8.
  */
 public class LC005_LongestPalindromicSubstringTest {
 

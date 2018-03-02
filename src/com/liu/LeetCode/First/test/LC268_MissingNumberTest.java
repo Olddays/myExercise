@@ -3,7 +3,7 @@ package com.liu.LeetCode.First.test;
 import static com.liu.LeetCode.First.exercise.LC268_MissingNumber.*;
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC268_MissingNumberTest {
 

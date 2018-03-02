@@ -3,7 +3,7 @@ package com.liu.LeetCode.First.test;
 import static com.liu.LeetCode.First.exercise.LC717_1_BitAnd2_BitCharacters.*;
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC717_1_BitAnd2_BitCharactersTest {
 

@@ -3,7 +3,7 @@ package com.liu.LeetCode.First.test;
 import static com.liu.LeetCode.First.exercise.LC003_LongestSubstringWithoutRepeatingCharacters.*;
 
 /**
- * Created by baidu on 2017/9/6.
+ * Created by liu on 2017/9/6.
  */
 public class LC003_LongestSubstringWithoutRepeatingCharactersTest {
     /**

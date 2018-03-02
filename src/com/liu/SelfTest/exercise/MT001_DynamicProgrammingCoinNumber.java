@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * Created by baidu on 2016/12/30.
+ * Created by liu on 2016/12/30.
  */
 public class MT001_DynamicProgrammingCoinNumber {
 

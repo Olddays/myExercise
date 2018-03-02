@@ -1,7 +1,7 @@
 package com.liu.LeetApp.exercise;
 
 /**
- * Created by baidu on 2016/11/30.
+ * Created by liu on 2016/11/30.
  */
 public class LA004_AddBinary {
     // Given two binary strings, return their sum (also a binary string).

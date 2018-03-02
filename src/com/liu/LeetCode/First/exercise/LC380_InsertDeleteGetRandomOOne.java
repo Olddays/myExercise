@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Random;
 
 /**
- * Created by baidu on 2017/9/30.
+ * Created by liu on 2017/9/30.
  */
 public class LC380_InsertDeleteGetRandomOOne {
     /**

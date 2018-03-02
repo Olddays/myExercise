@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * Created by baidu on 2016/11/28.
+ * Created by liu on 2016/11/28.
  */
 public class LA003_FourSum {
 

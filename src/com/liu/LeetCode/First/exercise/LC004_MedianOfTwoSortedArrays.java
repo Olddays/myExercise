@@ -1,7 +1,7 @@
 package com.liu.LeetCode.First.exercise;
 
 /**
- * Created by baidu on 2017/9/7.
+ * Created by liu on 2017/9/7.
  */
 public class LC004_MedianOfTwoSortedArrays {
     /**

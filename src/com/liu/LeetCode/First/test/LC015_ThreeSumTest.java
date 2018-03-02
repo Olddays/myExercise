@@ -6,7 +6,7 @@ import static com.liu.LeetCode.First.exercise.LC015_ThreeSum.*;
 
 
 /**
- * Created by baidu on 2017/9/14.
+ * Created by liu on 2017/9/14.
  */
 public class LC015_ThreeSumTest {
 

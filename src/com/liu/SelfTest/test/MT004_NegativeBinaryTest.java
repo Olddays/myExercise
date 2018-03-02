@@ -4,7 +4,7 @@ package com.liu.SelfTest.test;
 import static com.liu.SelfTest.exercise.MT004_NegativeBinary.getNegativeBinaryMy1;
 
 /**
- * Created by baidu on 2016/11/27.
+ * Created by liu on 2016/11/27.
  */
 public class MT004_NegativeBinaryTest {
 

@@ -6,7 +6,7 @@ import java.util.List;
 import static com.liu.SelfTest.exercise.MT002_NumberDegree_GoogleInterview.*;
 
 /**
- * Created by baidu on 2016/11/27.
+ * Created by liu on 2016/11/27.
  */
 public class MT002_NumberDegree_GoogleInterviewTest {
 

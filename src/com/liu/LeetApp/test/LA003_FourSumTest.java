@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import static com.liu.LeetApp.exercise.LA003_FourSum.*;
 
 /**
- * Created by baidu on 2016/11/28.
+ * Created by liu on 2016/11/28.
  */
 public class LA003_FourSumTest {
 

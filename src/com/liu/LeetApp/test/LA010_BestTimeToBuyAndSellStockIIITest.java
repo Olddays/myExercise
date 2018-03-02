@@ -3,7 +3,7 @@ package com.liu.LeetApp.test;
 import static com.liu.LeetApp.exercise.LA010_BestTimeToBuyAndSellStockIII.*;
 
 /**
- * Created by baidu on 2016/12/6.
+ * Created by liu on 2016/12/6.
  */
 public class LA010_BestTimeToBuyAndSellStockIIITest {
 

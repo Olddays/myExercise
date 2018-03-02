@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by baidu on 2017/9/30.
+ * Created by liu on 2017/9/30.
  */
 public class LC073_SetMatrixZeroes {
     /**
