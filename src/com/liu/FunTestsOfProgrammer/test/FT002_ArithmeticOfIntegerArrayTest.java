@@ -7,7 +7,7 @@ import static com.liu.FunTestsOfProgrammer.exercise.FT002_ArithmeticOfIntegerArr
 import static com.liu.FunTestsOfProgrammer.exercise.FT002_ArithmeticOfIntegerArray.getArithmeticOfIntegerArrayMy1;
 
 /**
- * Created by liu on 2016/11/27.
+ * Created by liu on 2018/02/28.
  */
 public class FT002_ArithmeticOfIntegerArrayTest {
 

@@ -6,7 +6,7 @@ import java.util.List;
 import static com.liu.FunTestsOfProgrammer.exercise.FT003_Flop.getFlopMy1;
 
 /**
- * Created by liu on 2016/11/27.
+ * Created by liu on 2018/02/28.
  */
 public class FT003_FlopTest {
 

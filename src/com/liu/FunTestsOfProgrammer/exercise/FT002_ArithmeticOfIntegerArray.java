@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Stack;
 
 /**
- * Created by liu on 28/02/2018.
+ * Created by liu on 2018/02/28.
  */
 public class FT002_ArithmeticOfIntegerArray {
     /**

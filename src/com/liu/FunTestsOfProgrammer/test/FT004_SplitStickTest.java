@@ -4,7 +4,7 @@ import static com.liu.FunTestsOfProgrammer.exercise.FT004_SplitStick.getSplitSti
 import static com.liu.FunTestsOfProgrammer.exercise.FT004_SplitStick.getSplitStickMy2;
 
 /**
- * Created by liu on 2016/11/27.
+ * Created by liu on 2018/02/28.
  */
 public class FT004_SplitStickTest {
 
@@ -31,7 +31,7 @@ public class FT004_SplitStickTest {
             startTime = System.currentTimeMillis();
             result = testMy2(stickLength, number);
             endTime = System.currentTimeMillis();
-            System.out.println("SplitStick My 1 result " + result + " during time " + (endTime - startTime));
+            System.out.println("SplitStick My 2 result " + result + " during time " + (endTime - startTime));
         }
     }
 

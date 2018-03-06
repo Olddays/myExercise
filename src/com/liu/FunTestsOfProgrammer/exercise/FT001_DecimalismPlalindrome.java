@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by liu on 28/02/2018.
+ * Created by liu on 2018/02/28.
  */
 public class FT001_DecimalismPlalindrome {
     /**

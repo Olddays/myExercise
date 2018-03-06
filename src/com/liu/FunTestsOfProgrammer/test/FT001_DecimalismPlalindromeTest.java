@@ -5,7 +5,7 @@ import static com.liu.FunTestsOfProgrammer.exercise.FT001_DecimalismPlalindrome.
 import static com.liu.FunTestsOfProgrammer.exercise.FT001_DecimalismPlalindrome.getDecimalismPlalindromeMy1;
 
 /**
- * Created by liu on 2016/11/27.
+ * Created by liu on 2018/02/28.
  */
 public class FT001_DecimalismPlalindromeTest {
 
