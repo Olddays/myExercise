@@ -3,6 +3,7 @@ package com.liu.FunTestsOfProgrammer.test;
 import java.util.List;
 
 import static com.liu.FunTestsOfProgrammer.exercise.FT007_BinaryDate.getBinaryDateMy1;
+import static com.liu.FunTestsOfProgrammer.exercise.FT007_BinaryDate.getBinaryDateMy2;
 
 /**
  * Created by liu on 2018/02/28.
@@ -31,10 +32,23 @@ public class FT007_BinaryDateTest {
                 System.out.print(i + " ");
             }
             System.out.println();
+
+            startTime = System.currentTimeMillis();
+            result = testMy1(start, end);
+            endTime = System.currentTimeMillis();
+            System.out.println("BinaryDate My 1 result.size() " + result.size() + " during time " + (endTime - startTime));
+            for (int i : result) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
         }
     }
 
     private static List<Integer> testMy1(int startTime, int endTime) {
         return getBinaryDateMy1(startTime, endTime);
+    }
+
+    private static List<Integer> testMy2(int startTime, int endTime) {
+        return getBinaryDateMy2(startTime, endTime);
     }
 }

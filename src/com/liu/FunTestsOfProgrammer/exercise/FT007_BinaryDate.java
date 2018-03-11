@@ -1,6 +1,11 @@
 package com.liu.FunTestsOfProgrammer.exercise;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -23,8 +28,84 @@ public class FT007_BinaryDate {
      * 脚本语言大多都有处理日期的工具库，可以利用起来。
      */
 
-    public static List<Integer> getBinaryDateMy1(int startTime, int endTime) {
+    public static List<Integer> getBinaryDateMy1(int startDate, int endDate) {
+        Calendar start = Calendar.getInstance();
+        start.set(startDate / 10000, startDate / 100 % 100, startDate % 100);
+        Long startTime = start.getTimeInMillis();
+
+        Calendar end = Calendar.getInstance();
+        end.set(endDate / 10000, endDate % 10000 / 100, endDate % 100);
+        Long endTime = end.getTimeInMillis();
+
+        Long oneDay = 1000 * 60 * 60 * 24l;
+
+        Long time = startTime;
         List<Integer> result = new ArrayList<>();
+        while (time <= endTime) {
+            Date d = new Date(time);
+            DateFormat df = new SimpleDateFormat("yyyyMMdd");
+            int date = Integer.valueOf(df.format(d));
+            if (checkPlalindrome(date)) {
+                result.add(date);
+            }
+            time += oneDay;
+        }
         return result;
+    }
+
+    private static boolean checkPlalindrome(int date) {
+        String binary = Integer.toBinaryString(date);
+        int left = 0;
+        int right = binary.length() - 1;
+        if (binary.length() % 2 == 1) {
+            while (left < right - 1) {
+                if (binary.charAt(left++) != binary.charAt(right--)) {
+                    return false;
+                }
+            }
+        } else {
+            while (left < right) {
+                if (binary.charAt(left++) != binary.charAt(right--)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static List<Integer> getBinaryDateMy2(int startDate, int endDate) {
+        Calendar start = Calendar.getInstance();
+        start.set(startDate / 10000, startDate / 100 % 100, startDate % 100);
+        Long startTime = start.getTimeInMillis();
+
+        Calendar end = Calendar.getInstance();
+        end.set(endDate / 10000, endDate % 10000 / 100, endDate % 100);
+        Long endTime = end.getTimeInMillis();
+
+        Long oneDay = 1000 * 60 * 60 * 24l;
+
+        Long time = startTime;
+        List<Integer> result = new ArrayList<>();
+        while (time <= endTime) {
+            Date d = new Date(time);
+            DateFormat df = new SimpleDateFormat("yyyyMMdd");
+            int date = Integer.valueOf(df.format(d));
+
+            if (Integer.parseInt(reverseString(Integer.toBinaryString(date)), 2) == date) {
+                result.add(date);
+            }
+
+            time += oneDay;
+        }
+        return result;
+    }
+
+    private static String reverseString(String input) {
+        int length = input.length();
+        if (length <= 1)
+            return input;
+        String left = input.substring(0, length / 2);
+        String right = input.substring(length / 2, length);
+        return reverseString(right) + reverseString(left);
     }
 }
