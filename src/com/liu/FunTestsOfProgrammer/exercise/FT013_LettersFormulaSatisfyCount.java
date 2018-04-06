@@ -44,16 +44,21 @@ public class FT013_LettersFormulaSatisfyCount {
 
     public static class Result {
         String originString;
-        Map<String, Integer> wordMap;
+        List<Map<String, Integer>> wordMapList;
 
-        Result(String originString, Map<String, Integer> wordMap) {
+        Result(String originString, List<Map<String, Integer>> wordMapList) {
             this.originString = originString;
-            this.wordMap = wordMap;
+            this.wordMapList = wordMapList;
         }
 
         @Override
         public String toString() {
-            return "originString: " + originString + ", wordMap: " + wordMap;
+            String result = "originString: " + originString + ", resultSize: "
+                    + wordMapList.size() + ", wordMapList: ";
+            for (Map<String, Integer> map : wordMapList) {
+                result += map;
+            }
+            return result;
         }
     }
 
@@ -63,8 +68,9 @@ public class FT013_LettersFormulaSatisfyCount {
             return null;
         }
         List<Map<Character, Integer>> charMapList = getFullPermutation(equationInstance.character);
-        Map<String, Integer> wordMap = new HashMap<>();
-        int parameterSize = equationInstance.parameters.size();
+        List<Map<String, Integer>> wordMapList = new ArrayList<>();
+        List<List<Character>> parameters = equationInstance.parameters;
+        int parameterSize = parameters.size();
         for (Map<Character, Integer> map : charMapList) {
             int[] possible = new int[parameterSize + 1];
 
@@ -73,32 +79,38 @@ public class FT013_LettersFormulaSatisfyCount {
                 if (i == parameterSize) {
                     target = equationInstance.equal;
                 } else {
-                    target = equationInstance.parameters.get(i);
+                    target = parameters.get(i);
                 }
                 int charSize = target.size() - 1;
                 int num = 0;
                 for (char parameter : target) {
                     num += map.get(parameter) * Math.pow(10, charSize--);
                 }
+                if (num == 281496) {
+                    System.out.print("");
+                }
                 possible[i] = num;
             }
             boolean equal = checkFunction(possible, equationInstance.symbol);
             if (equal) {
+                Map<String, Integer> wordMap = new HashMap<>();
                 for (int i = 0; i < possible.length; i++) {
                     String key = "";
-                    for (char c : equationInstance.parameters.get(i)) {
-                        key += c;
+                    if (i < parameterSize) {
+                        for (char c : parameters.get(i)) {
+                            key += c;
+                        }
+                    } else {
+                        for (char c : equationInstance.equal) {
+                            key += c;
+                        }
                     }
                     wordMap.put(key, possible[i]);
                 }
+                wordMapList.add(wordMap);
             }
         }
-        return new Result(equation, wordMap);
-    }
-
-    public static Result getLettersFormulaSatisfyCountMy2(String equation) {
-        Map<String, Integer> wordMap = new HashMap<>();
-        return new Result(equation, wordMap);
+        return new Result(equation, wordMapList);
     }
 
     private static List<Map<Character, Integer>> getFullPermutation(List<Character> list) {
