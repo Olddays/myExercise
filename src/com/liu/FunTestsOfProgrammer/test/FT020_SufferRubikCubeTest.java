@@ -18,7 +18,7 @@ public class FT020_SufferRubikCubeTest {
                         11, 7, 6, 9,
                         8, 10, 10, 5,
                         13, 2, 3, 15
-                },
+                }
         };
         int result;
         long startTime;

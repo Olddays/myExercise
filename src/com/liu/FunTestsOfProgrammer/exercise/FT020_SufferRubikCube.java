@@ -92,23 +92,23 @@ public class FT020_SufferRubikCube {
     }
 
     public static int getSufferRubikCubeMy2(int[] cubeSet) {
-        int sum = 0;
-        for (int cube : cubeSet) {
-            sum += cube;
+        int sumAll = 0;
+        for (int i : cubeSet) {
+            sumAll += i;
         }
-        int[] cache = new int[sum + 1];
-        cache[0] = 1;
-        for (int cube : cubeSet) {
-            for (int i = sum - cube; i >= 0; i--) {
-                cache[i + cube] += cache[i];
+        int[] sum = new int[sumAll + 1]; // 类似动态规划，将所有相关的解都存下来
+        sum[0] = 1; // 构成0的方式只有一种，如果cubeSet第一位是4那么此时有构成4的方式共1种，即sum[4]=1
+        for (int i : cubeSet) {
+            for (int j = sumAll - i; j >= 0; j--) {
+                sum[i + j] += sum[j]; // 由于此时i是固定的，j在变化，则有sum[i+j]共有自己原有的数量加sum[j]种的组合方式
+                // (因为此时i是固定的，我们可以认为就是sum[j]种组合加上i成为j+i)
             }
         }
-        int max = 0;
         int result = 0;
-        for (int i = 0; i < sum + 1; i++) {
-            int count = cache[i];
-            if (max < count) {
-                max = count;
+        int max = 0;
+        for (int i = 0; i < sumAll + 1; i++) {
+            if (max < sum[i]) {
+                max = sum[i];
                 result = i;
             }
         }
