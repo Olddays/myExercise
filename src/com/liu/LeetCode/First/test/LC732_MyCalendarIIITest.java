@@ -1,8 +1,5 @@
 package com.liu.LeetCode.First.test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static com.liu.LeetCode.First.exercise.LC732_MyCalendarIII.*;
 
 /**

@@ -1,5 +1,9 @@
 package com.liu.FunTestsOfProgrammer.exercise;
 
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by liu on 218/02/28.
  */
@@ -40,6 +44,64 @@ public class FT021_XorTriangle {
         if (target != 0 && target != 1) {
             return 0;
         }
-        return 0;
+        int targetCount = 0;
+        int lineCount = 1;
+        List<Integer> lastLine = new ArrayList<>();
+        lastLine.add(1);
+        if (target == 1) {
+            targetCount++;
+        }
+        if (targetCount >= index) {
+            return lineCount;
+        }
+        while (true) {
+            lineCount++;
+            List<Integer> lineCache = new ArrayList<>();
+            int size = lastLine.size();
+            lineCache.add(1);
+            for (int i = 0; i < size - 1; i++) {
+                int cache;
+                if (lastLine.get(i).equals(lastLine.get(i + 1))) {
+                    cache = 0;
+                } else {
+                    cache = 1;
+                }
+                lineCache.add(cache);
+            }
+            lineCache.add(1);
+            for (int i : lineCache) {
+                if (i == target) {
+                    targetCount++;
+                }
+            }
+            lastLine = lineCache;
+            if (targetCount >= index) {
+                return lineCount;
+            }
+        }
+    }
+
+    // 这种方式需要做很多次左移操作，如果使用int或long的话会导致内存溢出
+    public static int getXorTriangleMy2(int index, int target) {
+        if (target != 0 && target != 1) {
+            return 0;
+        }
+        int targetCount = 0;
+        int lineCount = 1;
+        BigInteger lineNum = new BigInteger("1");
+        if (target == 1) {
+            targetCount++;
+        }
+        while (targetCount < index) {
+            lineNum = lineNum.xor(lineNum.shiftLeft(1));
+            char[] cacheSet = lineNum.toString(2).toCharArray();
+            for (char c : cacheSet) {
+                if (c - '0' == target) {
+                    targetCount++;
+                }
+            }
+            lineCount++;
+        }
+        return lineCount;
     }
 }
