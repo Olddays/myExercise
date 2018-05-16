@@ -79,7 +79,7 @@ public class FT020_SufferRubikCube {
                 list.add(cache);
             }
         } else {
-            for (int i = start + 1; i < end; i++) {
+            for (int i = start; i < end; i++) {
                 int temp = coding[start];
                 coding[start] = coding[i];
                 coding[i] = temp;
