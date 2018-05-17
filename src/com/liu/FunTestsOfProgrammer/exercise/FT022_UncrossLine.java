@@ -26,12 +26,20 @@ public class FT022_UncrossLine {
      * 为简化对交叉的判断,请先划分出范围再进行思考。
      */
 
+    // 首先我们认为有个切分过程，逐步切分，直到最后每个组只有2个成员
+    // 且为了保证不出现交叉，则每次切分切出的部分必须均为偶数
+    // 每次划分会出现两个区域，在划分的两个区域种，中各自计算结对方式，再把两个区域内的结对方式数相乘就可以了
+    // 这样后者的结果依赖于前者的计算结果的方式，可以使用动态规划来处理
+    // 2个人的时候有1种结对方式，所以初始值为1
     public static int getUncrossLineMy1(int number) {
-        return 0;
-    }
-
-    // 这种方式需要做很多次左移操作，如果使用int或long的话会导致内存溢出
-    public static int getUncrossLineMy2(int number) {
-        return 0;
+        int[] cache = new int[number / 2 + 1];
+        cache[0] = 1;
+        for (int i = 1; i < number / 2 + 1; i++) {
+            cache[i] = 0;
+            for (int j = 0; j < i; j++) {
+                cache[i] += cache[j] * cache[i - j - 1];
+            }
+        }
+        return cache[number / 2];
     }
 }

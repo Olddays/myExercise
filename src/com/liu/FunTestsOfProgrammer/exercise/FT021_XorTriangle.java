@@ -81,7 +81,7 @@ public class FT021_XorTriangle {
         }
     }
 
-    // 这种方式需要做很多次左移操作，如果使用int或long的话会导致内存溢出
+    // 这种方式需要做很多次左移操作，如果使用int或long的话会导致内存溢出，所以最后使用了BigInteger
     public static int getXorTriangleMy2(int index, int target) {
         if (target != 0 && target != 1) {
             return 0;
