@@ -3,7 +3,7 @@ package com.liu.LeetCode.ThirtyDays202004.exercise;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TD010_MinStack {
+public class TD10_MinStack {
     public static class MinStack {
 
         List<Integer> integerList;

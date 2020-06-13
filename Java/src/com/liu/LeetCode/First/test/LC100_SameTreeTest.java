@@ -71,7 +71,7 @@ public class LC100_SameTreeTest {
         startTime = System.currentTimeMillis();
         result = testMy1(p, q);
         endTime = System.currentTimeMillis();
-        System.out.println("BinaryTreeInorderTraversal My 1, result: " + result + ", during time " + (endTime - startTime));
+        System.out.println("SameTree My 1, result: " + result + ", during time " + (endTime - startTime));
 
     }
 
