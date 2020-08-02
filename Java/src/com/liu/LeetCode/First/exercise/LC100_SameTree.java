@@ -1,6 +1,8 @@
 package com.liu.LeetCode.First.exercise;
 
 
+import com.liu.LeetCode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -8,16 +10,6 @@ import java.util.Objects;
  * Created by Liu on 2020/4/9.
  */
 public class LC100_SameTree {
-
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int x) {
-            val = x;
-        }
-    }
 
     public static boolean isSameTree(TreeNode p, TreeNode q) {
         ArrayList<Integer> pCache = new ArrayList<>();

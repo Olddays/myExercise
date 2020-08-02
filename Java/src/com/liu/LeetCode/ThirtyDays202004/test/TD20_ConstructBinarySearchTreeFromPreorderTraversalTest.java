@@ -1,6 +1,7 @@
 package com.liu.LeetCode.ThirtyDays202004.test;
 
-import com.liu.LeetCode.ThirtyDays202004.exercise.TD20_ConstructBinarySearchTreeFromPreorderTraversal.TreeNode;
+import com.liu.LeetCode.common.TreeNode;
+
 import static com.liu.LeetCode.ThirtyDays202004.exercise.TD20_ConstructBinarySearchTreeFromPreorderTraversal.bstFromPreorder;
 
 /**

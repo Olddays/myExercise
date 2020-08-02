@@ -1,19 +1,11 @@
 package com.liu.LeetCode.ThirtyDays202005.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 /**
  * Created by Liu on 2020/5/28.
  */
 public class TD24_ConstructBinarySearchTreeFromPreorderTraversal {
-
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int x) {
-            val = x;
-        }
-    }
 
     public static TreeNode bstFromPreorder(int[] preorder) {
         int length = preorder.length;

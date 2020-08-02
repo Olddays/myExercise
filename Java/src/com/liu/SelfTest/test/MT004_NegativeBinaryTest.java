@@ -84,4 +84,5 @@ public class MT004_NegativeBinaryTest {
         }
         return false;
     }
+
 }

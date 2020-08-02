@@ -1,5 +1,7 @@
 package com.liu.LeetCode.First.exercise;
 
+import com.liu.LeetCode.common.ListNode;
+
 /**
  * Created by liu on 2017/9/6.
  */
@@ -96,15 +98,6 @@ public class LC002_AddTwoNumbers {
             return result.next;
         } else {
             return null;
-        }
-    }
-
-    public static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode(int x) {
-            val = x;
         }
     }
 }

@@ -1,27 +1,11 @@
 package com.liu.LeetCode.ThirtyDays202006.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 /**
  * Created by Liu on 2020/6/1.
  */
 public class TD01_InvertBinaryTree {
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode() {
-        }
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-
-        public TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public static TreeNode invertTree(TreeNode root) {
         doInvert(root);

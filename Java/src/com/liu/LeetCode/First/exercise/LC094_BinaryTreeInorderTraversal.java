@@ -1,5 +1,7 @@
 package com.liu.LeetCode.First.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,26 +25,6 @@ public class LC094_BinaryTreeInorderTraversal {
      * <p>
      * Note: Recursive solution is trivial, could you do it iteratively?
      */
-
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     * int val;
-     * TreeNode left;
-     * TreeNode right;
-     * TreeNode(int x) { val = x; }
-     * }
-     */
-
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int x) {
-            val = x;
-        }
-    }
 
     public static List<Integer> getBinaryTreeInorderTraversalMy1(TreeNode root) {
         List<Integer> result = new ArrayList<>();

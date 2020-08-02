@@ -91,7 +91,7 @@ public class TD07_CoinChange2_Test {
                 2
         };
         startTime = System.currentTimeMillis();
-        result = testMy1(amount, coins);
+        result = testMy2(amount, coins);
         endTime = System.currentTimeMillis();
         System.out.println("TD07_CoinChange2 My 2 result " + result + " during time " + (endTime - startTime));
 

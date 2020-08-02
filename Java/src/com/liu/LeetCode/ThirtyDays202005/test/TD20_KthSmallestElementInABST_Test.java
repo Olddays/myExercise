@@ -1,6 +1,6 @@
 package com.liu.LeetCode.ThirtyDays202005.test;
 
-import com.liu.LeetCode.ThirtyDays202005.exercise.TD20_KthSmallestElementInABST.TreeNode;
+import com.liu.LeetCode.common.TreeNode;
 
 import static com.liu.LeetCode.ThirtyDays202005.exercise.TD20_KthSmallestElementInABST.kthSmallest;
 

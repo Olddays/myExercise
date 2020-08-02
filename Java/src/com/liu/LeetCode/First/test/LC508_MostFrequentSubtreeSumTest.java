@@ -1,7 +1,8 @@
 package com.liu.LeetCode.First.test;
 
+import com.liu.LeetCode.common.TreeNode;
+
 import static com.liu.LeetCode.First.exercise.LC508_MostFrequentSubtreeSum.getMostFrequentSubtreeSumAnswer1;
-import static com.liu.LeetCode.First.exercise.LC508_MostFrequentSubtreeSum.TreeNode;
 
 /**
  * Created by liu on 2017/9/14.

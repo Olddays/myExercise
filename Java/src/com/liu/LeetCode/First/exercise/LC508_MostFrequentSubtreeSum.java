@@ -1,5 +1,7 @@
 package com.liu.LeetCode.First.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -32,26 +34,6 @@ public class LC508_MostFrequentSubtreeSum {
      * return [2], since 2 happens twice, however -5 only occur once.
      * Note: You may assume the sum of values in any subtree is in the range of 32-bit signed integer.
      */
-
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     * int val;
-     * TreeNode left;
-     * TreeNode right;
-     * TreeNode(int x) { val = x; }
-     * }
-     */
-
-    public static class TreeNode {
-        int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int x) {
-            val = x;
-        }
-    }
 
     private static int maxCount;
 

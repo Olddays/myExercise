@@ -1,14 +1,8 @@
 package com.liu.LeetCode.ThirtyDays202004.exercise;
 
-public class TD08_MiddleOfTheLinkedList {
-    public static class ListNode {
-        public int val;
-        ListNode next;
+import com.liu.LeetCode.common.ListNode;
 
-        ListNode(int x) {
-            val = x;
-        }
-    }
+public class TD08_MiddleOfTheLinkedList {
 
     public static ListNode middleNode(ListNode head) {
         int count = 0;

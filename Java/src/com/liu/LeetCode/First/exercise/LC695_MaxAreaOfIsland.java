@@ -105,7 +105,7 @@ public class LC695_MaxAreaOfIsland {
         return result;
     }
 
-    // The idea is to count the area of each island using dfs. During the dfs,
+    // The idea is to count the area of each island using "depth first search". During the "depth first search",
     // we set the value of each point in the island to 0. The time complexity is O(mn).
     public static int getMaxAreaOfIslandAnswer1(int[][] grid) {
         int maxArea = 0;

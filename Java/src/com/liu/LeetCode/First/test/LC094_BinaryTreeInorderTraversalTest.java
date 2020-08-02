@@ -1,6 +1,6 @@
 package com.liu.LeetCode.First.test;
 
-import com.liu.LeetCode.First.exercise.LC094_BinaryTreeInorderTraversal.TreeNode;
+import com.liu.LeetCode.common.TreeNode;
 
 import java.util.List;
 

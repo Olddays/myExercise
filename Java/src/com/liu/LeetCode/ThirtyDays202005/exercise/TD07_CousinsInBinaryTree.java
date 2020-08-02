@@ -1,28 +1,11 @@
 package com.liu.LeetCode.ThirtyDays202005.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 /**
  * Created by Liu on 2020/5/7.
  */
 public class TD07_CousinsInBinaryTree {
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode() {
-        }
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-
-        public TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
     public static boolean isCousins(TreeNode root, int x, int y) {
         TreeNode xParent = getDepth(root, x, 0);
         TreeNode yParent = getDepth(root, y, 0);

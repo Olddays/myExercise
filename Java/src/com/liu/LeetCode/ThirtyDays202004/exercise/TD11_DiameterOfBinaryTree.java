@@ -1,18 +1,11 @@
 package com.liu.LeetCode.ThirtyDays202004.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TD11_DiameterOfBinaryTree {
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int x) {
-            val = x;
-        }
-    }
 
     // 思路没错，遍历多了一倍，导致时间复杂度加倍了，没必要
     public static int diameterOfBinaryTreeMy1(TreeNode root) {

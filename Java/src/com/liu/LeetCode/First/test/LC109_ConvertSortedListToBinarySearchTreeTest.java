@@ -1,7 +1,7 @@
 package com.liu.LeetCode.First.test;
 
-import com.liu.LeetCode.First.exercise.LC109_ConvertSortedListToBinarySearchTree.ListNode;
-import com.liu.LeetCode.First.exercise.LC109_ConvertSortedListToBinarySearchTree.TreeNode;
+import com.liu.LeetCode.common.ListNode;
+import com.liu.LeetCode.common.TreeNode;
 
 import static com.liu.LeetCode.First.exercise.LC109_ConvertSortedListToBinarySearchTree.sortedListToBST;
 

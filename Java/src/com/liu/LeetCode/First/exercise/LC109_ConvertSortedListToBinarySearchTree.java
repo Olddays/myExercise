@@ -1,5 +1,8 @@
 package com.liu.LeetCode.First.exercise;
 
+import com.liu.LeetCode.common.ListNode;
+import com.liu.LeetCode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,42 +10,6 @@ import java.util.List;
  * Created by Liu on 2020/6/5.
  */
 public class LC109_ConvertSortedListToBinarySearchTree {
-
-    public static class ListNode {
-        public int val;
-        public ListNode next;
-
-        public ListNode() {
-        }
-
-        public ListNode(int val) {
-            this.val = val;
-        }
-
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
-
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode() {
-        }
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-
-        public TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public static TreeNode sortedListToBST(ListNode head) {
         List<Integer> array = new ArrayList<>();

@@ -1,6 +1,7 @@
 package com.liu.LeetCode.ThirtyDays202004.test;
 
-import com.liu.LeetCode.ThirtyDays202004.exercise.TD11_DiameterOfBinaryTree.TreeNode;
+
+import com.liu.LeetCode.common.TreeNode;
 
 import static com.liu.LeetCode.ThirtyDays202004.exercise.TD11_DiameterOfBinaryTree.diameterOfBinaryTreeMy1;
 import static com.liu.LeetCode.ThirtyDays202004.exercise.TD11_DiameterOfBinaryTree.diameterOfBinaryTreeMy2;

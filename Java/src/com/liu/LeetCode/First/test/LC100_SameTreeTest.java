@@ -1,6 +1,7 @@
 package com.liu.LeetCode.First.test;
 
-import com.liu.LeetCode.First.exercise.LC100_SameTree.TreeNode;
+
+import com.liu.LeetCode.common.TreeNode;
 
 import static com.liu.LeetCode.First.exercise.LC100_SameTree.isSameTree;
 

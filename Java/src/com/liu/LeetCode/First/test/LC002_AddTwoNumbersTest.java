@@ -1,6 +1,7 @@
 package com.liu.LeetCode.First.test;
 
-import com.liu.LeetCode.First.exercise.LC002_AddTwoNumbers.ListNode;
+
+import com.liu.LeetCode.common.ListNode;
 
 import static com.liu.LeetCode.First.exercise.LC002_AddTwoNumbers.addTwoNumbersMy1;
 import static com.liu.LeetCode.First.exercise.LC002_AddTwoNumbers.addTwoNumbersMy2;

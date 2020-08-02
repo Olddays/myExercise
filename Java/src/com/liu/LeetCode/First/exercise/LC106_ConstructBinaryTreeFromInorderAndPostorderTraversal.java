@@ -1,5 +1,7 @@
 package com.liu.LeetCode.First.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 /**
  * Created by liu on 2017/9/30.
  */
@@ -18,16 +20,6 @@ public class LC106_ConstructBinaryTreeFromInorderAndPostorderTraversal {
      * TreeNode(int x) { val = x; }
      * }
      */
-
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 
     // The basic idea is here:
     // Say we have 2 arrays, IN and POST.

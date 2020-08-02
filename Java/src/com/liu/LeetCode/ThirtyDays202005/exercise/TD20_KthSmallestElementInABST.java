@@ -1,5 +1,7 @@
 package com.liu.LeetCode.ThirtyDays202005.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,25 +9,6 @@ import java.util.List;
  * Created by Liu on 2020/5/21.
  */
 public class TD20_KthSmallestElementInABST {
-
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode() {
-        }
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-
-        public TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
 
     public static int kthSmallest(TreeNode root, int k) {
         List<Integer> cache = new ArrayList<>();

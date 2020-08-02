@@ -1,18 +1,11 @@
 package com.liu.LeetCode.First.exercise;
 
+import com.liu.LeetCode.common.TreeNode;
+
 /**
  * Created by Liu on 2020/4/9.
  */
 public class LC099_RecoverBinarySearchTree {
-    public static class TreeNode {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-
-        public TreeNode(int x) {
-            val = x;
-        }
-    }
 
     static TreeNode left = null;
     static TreeNode right = null;
