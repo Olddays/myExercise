@@ -1,6 +1,6 @@
 package com.liu.LeetCode.ThirtyDays202004.exercise;
 
-import com.liu.LeetCode.common.ListNode;
+import com.liu.LeetCode.common.bean.ListNode;
 
 public class TD08_MiddleOfTheLinkedList {
 

@@ -1,6 +1,6 @@
 package com.liu.LeetCode.ThirtyDays202005.test;
 
-import com.liu.LeetCode.common.ListNode;
+import com.liu.LeetCode.common.bean.ListNode;
 
 import static com.liu.LeetCode.ThirtyDays202005.exercise.TD16_OddEvenLinkedList.oddEvenList;
 

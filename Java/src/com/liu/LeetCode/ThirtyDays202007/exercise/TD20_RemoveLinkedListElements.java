@@ -1,6 +1,6 @@
 package com.liu.LeetCode.ThirtyDays202007.exercise;
 
-import com.liu.LeetCode.common.ListNode;
+import com.liu.LeetCode.common.bean.ListNode;
 
 /**
  * Created by Liu on 2020/7/20.

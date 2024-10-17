@@ -1,6 +1,6 @@
 package com.liu.LeetCode.ThirtyDays202007.test;
 
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 import static com.liu.LeetCode.ThirtyDays202007.exercise.TD27_ConstructBinaryTreeFromInorderAndPostorderTraversal.buildTree;
 

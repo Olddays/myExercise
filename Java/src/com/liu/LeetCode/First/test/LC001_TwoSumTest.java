@@ -34,7 +34,7 @@ public class LC001_TwoSumTest {
         result = testMy1(nums, target);
         endTime = System.currentTimeMillis();
         for (int i = 0; i < result.length; i++) {
-            System.out.println("getTwoSum My 1 result" + i + " " + result[i] + " during time " + (endTime - startTime));
+            System.out.println("getTwoSum My 1 result " + i + " " + result[i] + " during time " + (endTime - startTime));
         }
     }
 

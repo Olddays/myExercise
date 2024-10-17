@@ -1,7 +1,7 @@
 package com.liu.LeetCode.ThirtyDays202007.test;
 
 
-import com.liu.LeetCode.common.ListNode;
+import com.liu.LeetCode.common.bean.ListNode;
 
 import static com.liu.LeetCode.ThirtyDays202007.exercise.TD20_RemoveLinkedListElements.removeElements;
 

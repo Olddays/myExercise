@@ -1,12 +1,11 @@
 package com.liu.LeetCode.First.exercise;
 
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * Created by liu on 2017/9/30.

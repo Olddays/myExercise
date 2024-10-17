@@ -1,6 +1,6 @@
 package com.liu.LeetCode.First.exercise;
 
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 /**
  * Created by liu on 2017/9/30.

@@ -1,7 +1,7 @@
 package com.liu.LeetCode.First.exercise;
 
-import com.liu.LeetCode.common.ListNode;
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.ListNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

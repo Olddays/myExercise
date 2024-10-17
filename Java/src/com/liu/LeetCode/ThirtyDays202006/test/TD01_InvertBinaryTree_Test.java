@@ -1,6 +1,6 @@
 package com.liu.LeetCode.ThirtyDays202006.test;
 
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 import static com.liu.LeetCode.ThirtyDays202006.exercise.TD01_InvertBinaryTree.invertTree;
 

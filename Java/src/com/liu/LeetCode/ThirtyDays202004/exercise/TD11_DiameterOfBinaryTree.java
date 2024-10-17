@@ -1,6 +1,6 @@
 package com.liu.LeetCode.ThirtyDays202004.exercise;
 
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

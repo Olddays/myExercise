@@ -1,6 +1,6 @@
 package com.liu.LeetCode.ThirtyDays202007.exercise;
 
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 import java.util.HashMap;
 

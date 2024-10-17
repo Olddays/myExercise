@@ -1,6 +1,6 @@
 package com.liu.LeetCode.First.test;
 
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 import static com.liu.LeetCode.First.exercise.LC101_SymmetricTree.isSymmetricMy1;
 import static com.liu.LeetCode.First.exercise.LC101_SymmetricTree.isSymmetricAnswer;

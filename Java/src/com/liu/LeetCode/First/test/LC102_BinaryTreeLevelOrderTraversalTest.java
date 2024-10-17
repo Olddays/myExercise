@@ -1,6 +1,6 @@
 package com.liu.LeetCode.First.test;
 
-import com.liu.LeetCode.common.TreeNode;
+import com.liu.LeetCode.common.bean.TreeNode;
 
 import java.util.List;
 
