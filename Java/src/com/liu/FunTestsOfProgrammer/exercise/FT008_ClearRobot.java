@@ -1,7 +1,5 @@
 package com.liu.FunTestsOfProgrammer.exercise;
 
-import javafx.util.Pair;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

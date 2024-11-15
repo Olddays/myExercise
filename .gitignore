@@ -3,3 +3,4 @@ build/
 # Android Studio files
 .idea/
 *.iml
+.DS_Store

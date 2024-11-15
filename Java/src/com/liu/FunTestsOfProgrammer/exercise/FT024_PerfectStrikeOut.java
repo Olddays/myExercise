@@ -1,8 +1,5 @@
 package com.liu.FunTestsOfProgrammer.exercise;
 
-
-import javafx.util.Pair;
-
 import java.util.ArrayList;
 import java.util.List;
 
