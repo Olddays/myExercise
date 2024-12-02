@@ -21,7 +21,6 @@ public class LC918_MaximumSumCircularSubarray {
     }
 
     private static int maxSubarraySumCircularAnswer1(int[] nums) {
-        int n = nums.length;
         int maxSum = nums[0];
         int minSum = nums[0];
         int curMax = 0;
