@@ -40,8 +40,8 @@ public class LC206_ReverseLinkedList {
         long endTime;
 
         for (int i = 0; i < valuesSet.length; i++) {
-            startTime = System.currentTimeMillis();
             ListNode node = (ListNode) NodeCreator.createNode(NODE_TYPE.NODE_TYPE_NORMAL_LIST, valuesSet[i]);
+            startTime = System.currentTimeMillis();
             result = reverseListMy1(node);
             endTime = System.currentTimeMillis();
             System.out.println("reverseList My1 result" + i + " " + Utils.getNodePrintableLog(NODE_TYPE.NODE_TYPE_NORMAL_LIST,
