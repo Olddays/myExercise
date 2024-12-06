@@ -63,12 +63,12 @@ public class Utils {
         Map<ListNode, Integer> cache = new HashMap<>();
         int index = 0;
         while (point != null) {
-            sb.append(point.val).append(",");
             point = point.next;
             if (cache.containsKey(point)) {
                 sb.append("cycle on ").append(cache.get(point)).append(",");
                 break;
             } else {
+                sb.append(point.val).append(",");
                 cache.put(point, index);
                 index++;
             }
