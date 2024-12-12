@@ -101,7 +101,6 @@ public class LC707_DesignLinkedList {
         }
     }
 
-
     public static void main(String[] args) {
         MyLinkedList obj = new MyLinkedList();
         obj.addAtHead(1);
