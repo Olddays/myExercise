@@ -81,7 +81,7 @@ public class LC113_PathSumII {
 
         for (int i = 0; i < treeNodeSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = pathSumMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_PREORDER_BINARY_TREE_ROOT, treeNodeSet[i]), targetSumSet[i]);
+            result = pathSumMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT, treeNodeSet[i]), targetSumSet[i]);
             endTime = System.currentTimeMillis();
             System.out.print("pathSum My1 result" + i + " ");
             for (List<Integer> list : result) {
@@ -95,7 +95,7 @@ public class LC113_PathSumII {
 
         for (int i = 0; i < treeNodeSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = pathSumMy2((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_PREORDER_BINARY_TREE_ROOT, treeNodeSet[i]), targetSumSet[i]);
+            result = pathSumMy2((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT, treeNodeSet[i]), targetSumSet[i]);
             endTime = System.currentTimeMillis();
             System.out.print("pathSum My2 result" + i + " ");
             for (List<Integer> list : result) {

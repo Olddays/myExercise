@@ -44,7 +44,7 @@ public class LC257_BinaryTreePaths {
 
         for (int i = 0; i < rootNodeSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = binaryTreePathsMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_PREORDER_BINARY_TREE_ROOT, rootNodeSet[i]));
+            result = binaryTreePathsMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT, rootNodeSet[i]));
             endTime = System.currentTimeMillis();
             System.out.print("binaryTreePaths My1 result" + i + " ");
             for (String s : result) {

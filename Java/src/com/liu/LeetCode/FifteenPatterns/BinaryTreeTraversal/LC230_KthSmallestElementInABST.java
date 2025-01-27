@@ -66,14 +66,14 @@ public class LC230_KthSmallestElementInABST {
 
         for (int i = 0; i < rootNodeSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = kthSmallestMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_PREORDER_BINARY_TREE_ROOT, rootNodeSet[i]), kSet[i]);
+            result = kthSmallestMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT, rootNodeSet[i]), kSet[i]);
             endTime = System.currentTimeMillis();
             System.out.println("kthSmallest My1 result" + i + " " + result + " during time " + (endTime - startTime));
         }
 
         for (int i = 0; i < rootNodeSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = kthSmallestMy2((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_PREORDER_BINARY_TREE_ROOT, rootNodeSet[i]), kSet[i]);
+            result = kthSmallestMy2((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT, rootNodeSet[i]), kSet[i]);
             endTime = System.currentTimeMillis();
             System.out.println("kthSmallest My2 result" + i + " " + result + " during time " + (endTime - startTime));
         }

@@ -84,14 +84,14 @@ public class LC124_BinaryTreeMaximumPathSum {
 
         for (int i = 0; i < rootNodeSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = maxPathSumMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_PREORDER_BINARY_TREE_ROOT, rootNodeSet[i]));
+            result = maxPathSumMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT, rootNodeSet[i]));
             endTime = System.currentTimeMillis();
             System.out.println("maxPathSum My1 result" + i + " " + result + " during time " + (endTime - startTime));
         }
 
         for (int i = 0; i < rootNodeSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = maxPathSumAnswer1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_PREORDER_BINARY_TREE_ROOT, rootNodeSet[i]));
+            result = maxPathSumAnswer1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT, rootNodeSet[i]));
             endTime = System.currentTimeMillis();
             System.out.println("maxPathSum Answer1 result" + i + " " + result + " during time " + (endTime - startTime));
         }

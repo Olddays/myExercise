@@ -6,10 +6,7 @@ import com.liu.LeetCode.common.bean.Node;
 import com.liu.LeetCode.common.bean.TreeNode;
 import com.liu.LeetCode.common.tools.Utils;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class NodeCreator {
     public static BaseNode createNode(Utils.NODE_TYPE nodeType, int[] values, int... args) {
@@ -21,8 +18,12 @@ public class NodeCreator {
                 return createNormalListNode(values);
             case NODE_TYPE_CYCLE_LIST:
                 return createCycleListNode(values, args);
-            case NODE_TYPE_PREORDER_BINARY_TREE_ROOT:
-                return createBinaryTreeNodeWithPreOrder(values);
+            case NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT:
+                return createBinaryTreeNodeWithLevelOrder(values);
+            case NODE_TYPE_LEVEL_ORDER_NORMAL_TREE_ROOT:
+                return createNormalTreeNodeWithLevelOrder(values);
+            case NODE_TYPE_LEVEL_ORDER_NEIGHBOUR_BINARY_TREE_ROOT:
+                return createNeighbourBinaryTreeNodeWithLevelOrder(values);
             default:
                 return null;
         }
@@ -57,29 +58,74 @@ public class NodeCreator {
         return head;
     }
 
-    private static TreeNode createBinaryTreeNodeWithPreOrder(int[] values) {
+    private static TreeNode createBinaryTreeNodeWithLevelOrder(int[] values) {
         TreeNode root = new TreeNode(values[0]);
-        TreeNode node = root;
-        boolean isLeft = false;
-        int jumpCount = 0;
+        Queue<TreeNode> queue = new LinkedList<>(); // 所以使用queue，针对queue顶操作，完成一个子孩子就退出
+        queue.add(root);
+        int index = 1;
+        while (!queue.isEmpty() && index < values.length) {
+            TreeNode currentNode = queue.poll();
+            for (int i = 0; i < 2 && index < values.length; i++) {
+                int value = values[index];
+                if (value != Integer.MIN_VALUE && value != Integer.MAX_VALUE) {
+                    if (i == 0) {
+                        currentNode.left = new TreeNode(value);
+                        queue.add(currentNode.left);
+                    } else {
+                        currentNode.right = new TreeNode(value);
+                        queue.add(currentNode.right);
+                    }
+                }
+                index++;
+            }
+        }
+        return root;
+    }
+
+    private static Node createNormalTreeNodeWithLevelOrder(int[] values) {
+        Node root = new Node(values[0]);
+        // 输入数据类似[1,null,3,2,4,null,5,6]，每个null表示按照逐行遍历的方式当前这个孩子的子孩子结束
+        // 所以从1开始
+        Queue<Node> queue = new LinkedList<>(); // 所以使用queue，针对queue顶操作，完成一个子孩子就退出
+        queue.add(root);
+        Node currentNode = null;
         for (int i = 1; i < values.length; i++) {
-            isLeft = !isLeft;
             int c = values[i];
             if (c == Integer.MIN_VALUE || c == Integer.MAX_VALUE) {
-                jumpCount++;
-                continue; // 跳过
+                currentNode = queue.poll();
+                continue;
             }
-            if (isLeft) {
-                node.left = new TreeNode(c);
-            } else {
-                node.right = new TreeNode(c);
-                if (node.left != null && jumpCount % 2 != 0) {
-                    node = node.left;
-                } else {
-                    node = node.right;
+            if (currentNode == null) {
+                System.out.println("create node error");
+                return null;
+            }
+            Node newNode = new Node(c);
+            queue.add(newNode);
+            currentNode.children.add(newNode);
+        }
+        return root;
+    }
+
+    private static Node createNeighbourBinaryTreeNodeWithLevelOrder(int[] values) {
+        Node root = new Node(values[0]);
+        Queue<Node> queue = new LinkedList<>(); // 所以使用queue，针对queue顶操作，完成一个子孩子就退出
+        queue.add(root);
+        int index = 1;
+        while (!queue.isEmpty() && index < values.length) {
+            Node currentNode = queue.poll();
+            for (int i = 0; i < 2; i++) {
+                int value = values[index];
+                if (value != Integer.MIN_VALUE && value != Integer.MAX_VALUE) {
+                    if (i == 0) {
+                        currentNode.left = new Node(value);
+                        queue.add(currentNode.left);
+                    } else {
+                        currentNode.right = new Node(value);
+                        queue.add(currentNode.right);
+                    }
                 }
+                index++;
             }
-            jumpCount = 0;
         }
         return root;
     }

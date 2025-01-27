@@ -12,7 +12,9 @@ public class Utils {
     public enum NODE_TYPE {
         NODE_TYPE_NORMAL_LIST,
         NODE_TYPE_CYCLE_LIST,
-        NODE_TYPE_PREORDER_BINARY_TREE_ROOT,
+        NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT,
+        NODE_TYPE_LEVEL_ORDER_NORMAL_TREE_ROOT,
+        NODE_TYPE_LEVEL_ORDER_NEIGHBOUR_BINARY_TREE_ROOT,
         NODE_TYPE_NORMAL,
     }
 
@@ -38,8 +40,12 @@ public class Utils {
                 return createNormalListNodeLog(node);
             case NODE_TYPE_CYCLE_LIST:
                 return createCycleListNodeLog(node);
-            case NODE_TYPE_PREORDER_BINARY_TREE_ROOT:
+            case NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT:
                 return createBinaryTreeNodeLog(node);
+            case NODE_TYPE_LEVEL_ORDER_NORMAL_TREE_ROOT:
+                return createNormalTreeNodeLog(node);
+            case NODE_TYPE_LEVEL_ORDER_NEIGHBOUR_BINARY_TREE_ROOT:
+                return createNeighbourBinaryTreeNodeLog(node);
             case NODE_TYPE_NORMAL:
                 return createNormalNodeLog(node);
             default:
@@ -83,6 +89,20 @@ public class Utils {
         return sb.toString();
     }
 
+    private static String createNormalTreeNodeLog(BaseNode node) {
+        StringBuilder sb = new StringBuilder();
+        Node point = (Node) node;
+        deepFirstSearch(point, sb);
+        return sb.toString();
+    }
+
+    private static String createNeighbourBinaryTreeNodeLog(BaseNode node) {
+        StringBuilder sb = new StringBuilder();
+        Node point = (Node) node;
+        deepFirstSearch(point, sb);
+        return sb.toString();
+    }
+
     private static String createNormalNodeLog(BaseNode node) {
         StringBuilder sb = new StringBuilder();
         Node point = (Node) node;
@@ -106,6 +126,18 @@ public class Utils {
         sb.append(node.val).append(",");
         for (Node child : node.neighbors) {
             deepFirstSearch(child, sb);
+        }
+        for (Node child : node.children) {
+            deepFirstSearch(child, sb);
+        }
+        if (node.left != null) {
+            deepFirstSearch(node.left, sb);
+        }
+        if (node.right != null) {
+            deepFirstSearch(node.right, sb);
+        }
+        if (node.next != null) {
+            deepFirstSearch(node.next, sb);
         }
     }
 }

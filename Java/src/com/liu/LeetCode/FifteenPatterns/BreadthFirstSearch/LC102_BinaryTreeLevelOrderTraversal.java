@@ -60,7 +60,7 @@ public class LC102_BinaryTreeLevelOrderTraversal {
 
         for (int i = 0; i < treeNodeSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = levelOrderMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_PREORDER_BINARY_TREE_ROOT, treeNodeSet[i]));
+            result = levelOrderMy1((TreeNode) NodeCreator.createNode(Utils.NODE_TYPE.NODE_TYPE_LEVEL_ORDER_BINARY_TREE_ROOT, treeNodeSet[i]));
             endTime = System.currentTimeMillis();
             System.out.print("levelOrder My1 result" + i + " ");
             for (List<Integer> numSet : result) {
