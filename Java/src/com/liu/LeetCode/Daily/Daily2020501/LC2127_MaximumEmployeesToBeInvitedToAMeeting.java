@@ -1,12 +1,8 @@
 package com.liu.LeetCode.Daily.Daily2020501;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class LC2127_MaximumEmployeesToBeInvitedToAMeeting {
-
 
     private static int maximumInvitationsAnswer1(int[] favorite) {
         int length = favorite.length;
@@ -76,6 +72,62 @@ public class LC2127_MaximumEmployeesToBeInvitedToAMeeting {
         return max + 1;
     }
 
+    private static int maximumInvitationsAnswer2(int[] favorite) {
+        int length = favorite.length;
+        int[] inDeg = new int[length];
+        int[] chainLen = new int[length];
+        boolean[] visited = new boolean[length];
+        Queue<Integer> queue = new LinkedList<>();
+
+        // Count how many people favor each employee
+        for (int f : favorite) {
+            inDeg[f]++;
+        }
+
+        // Start with employees no one favorites (chain starters)
+        for (int i = 0; i < length; i++) {
+            if (inDeg[i] == 0) {
+                queue.add(i);
+            }
+        }
+
+        // Process chains to calculate max chain lengths
+        while (!queue.isEmpty()) {
+            int u = queue.poll();
+            visited[u] = true;
+            int v = favorite[u];
+            chainLen[v] = Math.max(chainLen[v], chainLen[u] + 1);
+            if (--inDeg[v] == 0) {
+                queue.add(v);
+            }
+        }
+
+        int maxCycle = 0, pairChains = 0;
+
+        // Detect cycles and calculate results
+        for (int i = 0; i < length; i++) {
+            if (visited[i]) {
+                continue;
+            }
+
+            int cycleLen = 0, current = i;
+            // Measure cycle length
+            while (!visited[current]) {
+                visited[current] = true;
+                current = favorite[current];
+                cycleLen++;
+            }
+
+            if (cycleLen == 2) {// Mutual pair
+                pairChains += 2 + chainLen[i] + chainLen[favorite[i]];
+            } else {
+                maxCycle = Math.max(maxCycle, cycleLen);
+            }
+        }
+
+        return Math.max(maxCycle, pairChains);
+    }
+
     public static void main(String[] args) {
         int[][] favoriteList = new int[][]{
                 {2, 2, 1, 2},
@@ -90,7 +142,14 @@ public class LC2127_MaximumEmployeesToBeInvitedToAMeeting {
             startTime = System.currentTimeMillis();
             result = maximumInvitationsAnswer1(favoriteList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("maximumInvitations My1 result" + i + " " + result + " during time " + (endTime - startTime));
+            System.out.println("maximumInvitations Answer1 result" + i + " " + result + " during time " + (endTime - startTime));
+        }
+
+        for (int i = 0; i < favoriteList.length; i++) {
+            startTime = System.currentTimeMillis();
+            result = maximumInvitationsAnswer2(favoriteList[i]);
+            endTime = System.currentTimeMillis();
+            System.out.println("maximumInvitations Answer2 result" + i + " " + result + " during time " + (endTime - startTime));
         }
     }
 }
