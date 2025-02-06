@@ -1,4 +1,4 @@
-package com.liu.LeetCode.Daily.Daily2020501;
+package com.liu.LeetCode.Daily.Daily202501;
 
 public class LC2185_CountingWordsWithAGivenPrefix {
 

@@ -1,6 +1,4 @@
-package com.liu.LeetCode.Daily.Daily2020501;
-
-import java.util.Stack;
+package com.liu.LeetCode.Daily.Daily202501;
 
 public class LC2116_CheckIfAParenthesesStringCanBeValid {
 

@@ -1,6 +1,4 @@
-package com.liu.LeetCode.Daily.Daily2020501;
-
-import java.util.List;
+package com.liu.LeetCode.Daily.Daily202501;
 
 public class LC1400_ConstructKPalindromeStrings {
     // Beats 76.62%

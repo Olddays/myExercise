@@ -1,8 +1,4 @@
-package com.liu.LeetCode.Daily.Daily2020501;
-
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+package com.liu.LeetCode.Daily.Daily202501;
 
 public class LC3042_CountPrefixAndSuffixPairsI {
 
