@@ -118,7 +118,7 @@ public class LC2127_MaximumEmployeesToBeInvitedToAMeeting {
                 cycleLen++;
             }
 
-            if (cycleLen == 2) {// Mutual pair
+            if (cycleLen == 2) { // Mutual pair
                 pairChains += 2 + chainLen[i] + chainLen[favorite[i]];
             } else {
                 maxCycle = Math.max(maxCycle, cycleLen);

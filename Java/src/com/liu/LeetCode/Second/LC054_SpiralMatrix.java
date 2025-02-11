@@ -1,4 +1,4 @@
-package com.liu.LeetCode.Second.exercise;
+package com.liu.LeetCode.Second;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +41,32 @@ public class LC054_SpiralMatrix {
         }
         return result;
     }
-    
-    
+
+    public static void main(String[] args) {
+        int[][][] numsList = new int[][][]{
+                {
+                        {1}, {2}, {3},
+                        {4}, {5}, {6},
+                        {7}, {8}, {9}, {10}
+                }, {
+                {1, 2, 3}, {4, 5, 6}, {7, 8, 9}
+        },
+        };
+
+        List<Integer> result;
+        long startTime;
+        long endTime;
+
+        for (int[][] nums : numsList) {
+            startTime = System.currentTimeMillis();
+            result = spiralOrderMy1(nums);
+            endTime = System.currentTimeMillis();
+            System.out.println("SpiralMatrix My 1 result.size: " + result.size() + " during time " + (endTime - startTime));
+            for (int i : result) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
 }

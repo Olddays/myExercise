@@ -3,31 +3,6 @@ package com.liu.LeetCode.Daily.Daily202412;
 import java.util.*;
 
 public class LC2182_ConstructStringWithRepeatLimit {
-    private static String repeatLimitedStringMy1(String s, int repeatLimit) {
-        char[] sChars = s.toCharArray();
-        Map<Character, Integer> map = new HashMap<>();
-        for (char c : sChars) {
-            int size = map.getOrDefault(c, 0) + 1;
-            map.put(c, size);
-        }
-        List<Character> list = new ArrayList<>(map.keySet());
-        list.sort((o1, o2) -> o2 - o1);
-        StringBuilder builder = new StringBuilder();
-        while (!map.isEmpty()) {
-            for (char key : list) {
-                if (!map.containsKey(key)) continue;
-                int size = map.get(key);
-                if (size > repeatLimit) {
-                    map.put(key, size - repeatLimit);
-                    size = repeatLimit;
-                } else {
-                    map.remove(key);
-                }
-                builder.append(String.valueOf(key).repeat(Math.max(0, size)));
-            }
-        }
-        return builder.toString();
-    }
 
     private static String repeatLimitedStringAnswer1(String s, int repeatLimit) {
         PriorityQueue<Character> pq = new PriorityQueue<>((a, b) -> b - a);
@@ -149,16 +124,17 @@ public class LC2182_ConstructStringWithRepeatLimit {
 
         for (int i = 0; i < sSet.length; i++) {
             startTime = System.currentTimeMillis();
-            result = repeatLimitedStringMy1(sSet[i], repeatLimitSet[i]);
-            endTime = System.currentTimeMillis();
-            System.out.println("repeatLimitedString My1 result" + i + " " + result + " during time " + (endTime - startTime));
-        }
-
-        for (int i = 0; i < sSet.length; i++) {
-            startTime = System.currentTimeMillis();
             result = repeatLimitedStringAnswer1(sSet[i], repeatLimitSet[i]);
             endTime = System.currentTimeMillis();
             System.out.println("repeatLimitedString Answer1 result" + i + " " + result + " during time " + (endTime - startTime));
         }
+
+        for (int i = 0; i < sSet.length; i++) {
+            startTime = System.currentTimeMillis();
+            result = repeatLimitedStringAnswer2(sSet[i], repeatLimitSet[i]);
+            endTime = System.currentTimeMillis();
+            System.out.println("repeatLimitedString Answer2 result" + i + " " + result + " during time " + (endTime - startTime));
+        }
+
     }
 }

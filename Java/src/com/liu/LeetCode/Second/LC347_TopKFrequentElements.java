@@ -1,4 +1,4 @@
-package com.liu.LeetCode.Second.exercise;
+package com.liu.LeetCode.Second;
 
 import java.util.*;
 
@@ -34,6 +34,34 @@ public class LC347_TopKFrequentElements {
             }
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        int[][] numSet = {
+                {4, 1, -1, 2, -1, 2, 3},
+                {2, 2, 1, 1, 1, 3},
+        };
+        int[] kSet = {
+                2,
+                2
+        };
+        long startTime;
+        int[] result;
+        long endTime;
+
+        for (int i = 0; i < numSet.length; i++) {
+            int[] nums = numSet[i];
+            int k = kSet[i];
+
+            startTime = System.currentTimeMillis();
+            result = topKFrequentMy1(nums, k);
+            endTime = System.currentTimeMillis();
+            System.out.println("TopKFrequentElements My 1 result.size() " + result.length + " during time " + (endTime - startTime));
+            for (int num : result) {
+                System.out.print(num + " ");
+            }
+            System.out.println();
+        }
     }
 
 }
