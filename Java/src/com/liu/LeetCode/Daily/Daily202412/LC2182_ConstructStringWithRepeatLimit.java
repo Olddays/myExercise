@@ -135,6 +135,5 @@ public class LC2182_ConstructStringWithRepeatLimit {
             endTime = System.currentTimeMillis();
             System.out.println("repeatLimitedString Answer2 result" + i + " " + result + " during time " + (endTime - startTime));
         }
-
     }
 }
