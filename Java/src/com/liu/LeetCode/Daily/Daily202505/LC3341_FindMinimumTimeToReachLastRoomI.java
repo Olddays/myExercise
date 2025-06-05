@@ -1,5 +1,7 @@
 package com.liu.LeetCode.Daily.Daily202505;
 
+import com.liu.LeetCode.common.tools.Utils;
+
 import java.util.*;
 
 public class LC3341_FindMinimumTimeToReachLastRoomI {
@@ -102,7 +104,7 @@ public class LC3341_FindMinimumTimeToReachLastRoomI {
             startTime = System.currentTimeMillis();
             result = minTimeToReachAnswer1(numsList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("minTimeToReach Answer1 result" + i + " " + result + " result check " + (result == resultList[i])
+            System.out.println("minTimeToReach Answer1 result" + i + " " + result + " result check " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
     }

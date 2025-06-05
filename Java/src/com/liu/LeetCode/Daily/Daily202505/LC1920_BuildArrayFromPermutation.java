@@ -1,5 +1,7 @@
 package com.liu.LeetCode.Daily.Daily202505;
 
+import com.liu.LeetCode.common.tools.Utils;
+
 import java.util.Arrays;
 
 public class LC1920_BuildArrayFromPermutation {
@@ -30,7 +32,7 @@ public class LC1920_BuildArrayFromPermutation {
             startTime = System.currentTimeMillis();
             result = buildArrayMy1(numsList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("maxTaskAssign My1 result" + i + " " + Arrays.toString(result) + " result check " + (result == resultList[i])
+            System.out.println("maxTaskAssign My1 result" + i + " " + Arrays.toString(result) + " result check " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
     }

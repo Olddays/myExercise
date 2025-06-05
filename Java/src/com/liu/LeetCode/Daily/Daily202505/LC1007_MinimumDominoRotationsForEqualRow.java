@@ -1,5 +1,7 @@
 package com.liu.LeetCode.Daily.Daily202505;
 
+import com.liu.LeetCode.common.tools.Utils;
+
 public class LC1007_MinimumDominoRotationsForEqualRow {
 
     // Beats 25.38%
@@ -49,7 +51,7 @@ public class LC1007_MinimumDominoRotationsForEqualRow {
             startTime = System.currentTimeMillis();
             result = minDominoRotationsMy1(topsList[i], bottomsList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("minDominoRotations My1 result" + i + " " + result + " result check " + (result == resultList[i])
+            System.out.println("minDominoRotations My1 result" + i + " " + result + " result check " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
     }

@@ -1,5 +1,7 @@
 package com.liu.LeetCode.Daily.Daily202505;
 
+import com.liu.LeetCode.common.tools.Utils;
+
 public class LC838_PushDominoes {
 
     // Beats 100.00% 这次完全自己做的
@@ -59,7 +61,7 @@ public class LC838_PushDominoes {
             startTime = System.currentTimeMillis();
             result = pushDominoesMy1(dominoesList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("pushDominoes My1 result" + i + " " + result + " result check " + (result.equals(resultList[i]))
+            System.out.println("pushDominoes My1 result" + i + " " + result + " result check " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
     }

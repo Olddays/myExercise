@@ -1,5 +1,7 @@
 package com.liu.LeetCode.Daily.Daily202505;
 
+import com.liu.LeetCode.common.tools.Utils;
+
 public class LC3343_CountNumberOfBalancedPermutations {
     // backtrace 一定会超时，用dp尝试
 
@@ -70,7 +72,7 @@ public class LC3343_CountNumberOfBalancedPermutations {
             startTime = System.currentTimeMillis();
             result = countBalancedPermutationsMy1(numList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("countBalancedPermutations My1 result" + i + " " + result + " result check " + (result == resultList[i])
+            System.out.println("countBalancedPermutations My1 result" + i + " " + result + " result check " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
     }

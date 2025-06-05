@@ -1,5 +1,7 @@
 package com.liu.LeetCode.Daily.Daily202505;
 
+import com.liu.LeetCode.common.tools.Utils;
+
 public class LC790_DominoAndTrominoTiling {
 
     // DP算法
@@ -35,10 +37,10 @@ public class LC790_DominoAndTrominoTiling {
         dp[0] = 1;
         dp[1] = 2;
         dp[2] = 5;
-        for (int i = 3; i < n; i ++) {
+        for (int i = 3; i < n; i++) {
             dp[i] = (dp[i - 1] * 2 + dp[i - 3]) % 1000000007;
         }
-        return (int)dp[n - 1];
+        return (int) dp[n - 1];
     }
 
     public static void main(String[] args) {
@@ -58,7 +60,7 @@ public class LC790_DominoAndTrominoTiling {
             startTime = System.currentTimeMillis();
             result = numTilingsMy1(nList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("numTilings My1 result" + i + " " + result + " result " + (result == resultList[i])
+            System.out.println("numTilings My1 result" + i + " " + result + " result " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
 
@@ -66,7 +68,7 @@ public class LC790_DominoAndTrominoTiling {
             startTime = System.currentTimeMillis();
             result = numTilingsAnswer1(nList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("numTilings Answer1 result" + i + " " + result + " result " + (result == resultList[i])
+            System.out.println("numTilings Answer1 result" + i + " " + result + " result " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
     }

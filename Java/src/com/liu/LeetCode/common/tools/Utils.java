@@ -5,8 +5,7 @@ import com.liu.LeetCode.common.bean.ListNode;
 import com.liu.LeetCode.common.bean.Node;
 import com.liu.LeetCode.common.bean.TreeNode;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Utils {
     public enum NODE_TYPE {
@@ -139,5 +138,234 @@ public class Utils {
         if (node.next != null) {
             deepFirstSearch(node.next, sb);
         }
+    }
+
+    public static boolean compareResult(int result, int expected) {
+        return result == expected;
+    }
+
+    public static boolean compareResult(long result, long expected) {
+        return result == expected;
+    }
+
+    public static boolean compareResult(float result, float expected) {
+        return result == expected;
+    }
+
+    public static boolean compareResult(double result, double expected) {
+        return result == expected;
+    }
+
+    public static boolean compareResult(boolean result, boolean expected) {
+        return result == expected;
+    }
+
+    public static boolean compareResult(String result, String expected) {
+        return result.equals(expected);
+    }
+
+    public static boolean compareResult(int[] result, int[] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i] != expected[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(long[] result, long[] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i] != expected[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(float[] result, float[] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i] != expected[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(double[] result, double[] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i] != expected[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(boolean[] result, boolean[] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i] != expected[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(String[] result, String[] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (!result[i].equals(expected[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(int[][] result, int[][] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i].length != expected[i].length) {
+                return false;
+            }
+            for (int j = 0; j < result[i].length; j++) {
+                if (result[i][j] != expected[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(long[][] result, long[][] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i].length != expected[i].length) {
+                return false;
+            }
+            for (int j = 0; j < result[i].length; j++) {
+                if (result[i][j] != expected[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(float[][] result, float[][] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i].length != expected[i].length) {
+                return false;
+            }
+            for (int j = 0; j < result[i].length; j++) {
+                if (result[i][j] != expected[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(double[][] result, double[][] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i].length != expected[i].length) {
+                return false;
+            }
+            for (int j = 0; j < result[i].length; j++) {
+                if (result[i][j] != expected[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(boolean[][] result, boolean[][] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i].length != expected[i].length) {
+                return false;
+            }
+            for (int j = 0; j < result[i].length; j++) {
+                if (result[i][j] != expected[i][j]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(String[][] result, String[][] expected) {
+        if (result.length != expected.length) {
+            return false;
+        }
+        for (int i = 0; i < result.length; i++) {
+            if (result[i].length != expected[i].length) {
+                return false;
+            }
+            for (int j = 0; j < result[i].length; j++) {
+                if (!result[i][j].equals(expected[i][j])) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(List result, List expected) {
+        if (result.size() != expected.size()) {
+            return false;
+        }
+        for (int i = 0; i < result.size(); i++) {
+            if (!result.get(i).equals(expected.get(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean compareResult(Set result, Set expected) {
+        return result.size() == expected.size() && result.containsAll(expected);
+    }
+
+    public static boolean compareResult(Map result, Map expected) {
+        if (result.size() != expected.size()) {
+            return false;
+        }
+        for (Object object : result.entrySet()) {
+            Map.Entry<Object, Object> entry = (Map.Entry<Object, Object>) object;
+            Object key = entry.getKey();
+            Object value = entry.getValue();
+            if (!expected.containsKey(key) || !value.equals(expected.get(key))) {
+                return false;
+            }
+        }
+        return true;
     }
 }

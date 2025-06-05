@@ -1,5 +1,7 @@
 package com.liu.LeetCode.Daily.Daily202505;
 
+import com.liu.LeetCode.common.tools.Utils;
+
 import java.util.*;
 
 public class LC2071_MaximumNumberOfTasksYouCanAssign {
@@ -76,7 +78,7 @@ public class LC2071_MaximumNumberOfTasksYouCanAssign {
             startTime = System.currentTimeMillis();
             result = maxTaskAssignMy1(tasksList[i], workersList[i], pillsList[i], strengthList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("maxTaskAssign My1 result" + i + " " + result + " result check " + (result == resultList[i])
+            System.out.println("maxTaskAssign My1 result" + i + " " + result + " result check " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
     }

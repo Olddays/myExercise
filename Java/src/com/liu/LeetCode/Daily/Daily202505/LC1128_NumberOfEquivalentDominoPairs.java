@@ -1,5 +1,7 @@
 package com.liu.LeetCode.Daily.Daily202505;
 
+import com.liu.LeetCode.common.tools.Utils;
+
 import java.util.*;
 
 public class LC1128_NumberOfEquivalentDominoPairs {
@@ -53,7 +55,7 @@ public class LC1128_NumberOfEquivalentDominoPairs {
             startTime = System.currentTimeMillis();
             result = numEquivDominoPairsMy1(dominoesList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("numEquivDominoPairs My1 result" + i + " " + result + " result " + (result == resultList[i])
+            System.out.println("numEquivDominoPairs My1 result" + i + " " + result + " result " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
 
@@ -61,7 +63,7 @@ public class LC1128_NumberOfEquivalentDominoPairs {
             startTime = System.currentTimeMillis();
             result = numEquivDominoPairsAnswer1(dominoesList[i]);
             endTime = System.currentTimeMillis();
-            System.out.println("numEquivDominoPairs Answer1 result" + i + " " + result + " result " + (result == resultList[i])
+            System.out.println("numEquivDominoPairs Answer1 result" + i + " " + result + " result " + Utils.compareResult(result, resultList[i])
                     + " during time " + (endTime - startTime));
         }
     }
